@@ -1,0 +1,349 @@
+/* Variables de color */
+:root {
+    --color-primario: #2C3E50;
+    --color-secundario: #18BC9C;
+    --color-acento: #F39C12;
+    --color-texto-oscuro: #333;
+    --color-texto-claro: #fff;
+    --sombra-card: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--color-texto-oscuro);
+    margin: 0;
+    padding-top: 56px; /* Altura del navbar fijo */
+    scroll-behavior: smooth;
+}
+
+h2 {
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-primario);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: var(--color-texto-claro);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-texto-claro);
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-acento);
+}
+
+/* Inicio */
+.inicio {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+.inicio h1 {
+    color: var(--color-primario);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.inicio p {
+    font-size: 1.2rem;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 2rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #14a085;
+}
+
+/* Servicios */
+.servicios {
+    background-color: #fff;
+}
+
+.servicios .card-servicio {
+    background-color: #fff;
+    border: none;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: var(--sombra-card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem; /* Espacio entre cards */
+}
+
+.servicios .card-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.servicios .card-servicio i {
+    font-size: 2rem;
+    color: var(--color-secundario);
+    margin-bottom: 1rem;
+}
+
+.servicios .card-servicio h3 {
+    color: var(--color-primario);
+    margin-bottom: 0.5rem;
+}
+
+.servicios .card-servicio p {
+    color: var(--color-texto-oscuro);
+}
+.servicios .card-servicio img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Equipo */
+.equipo {
+    background-color: #f8f9fa;
+}
+
+.equipo .card-veterinario {
+    background-color: #fff;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: var(--sombra-card);
+    margin-bottom: 1.5rem;
+}
+
+.equipo .foto-veterinario {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--color-secundario);
+}
+
+.equipo h3 {
+    color: var(--color-primario);
+    margin-bottom: 0.2rem;
+}
+
+.equipo h4 {
+    color: var(--color-acento);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.equipo p {
+    color: var(--color-texto-oscuro);
+    font-size: 0.9rem;
+}
+
+/* Contacto */
+.contacto {
+    background-color: #fff;
+}
+
+.contacto .contacto-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--sombra-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el hover */
+}
+
+.contacto .contacto-card:hover {
+    transform: scale(1.03); /* Ligeramente más grande */
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+
+.contacto .info-contacto {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto .telefono-grande {
+    font-size: 1.8rem;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.contacto .telefono-grande i {
+    margin-right: 0.5rem;
+}
+
+.contacto .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #25D366; /* Color de WhatsApp */
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contacto .btn-whatsapp:hover {
+    background-color: #1da851;
+}
+
+.contacto .btn-whatsapp i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contacto form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contacto .form-control {
+    margin-bottom: 1.5rem;
+}
+
+.contacto .btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto .btn-enviar:hover {
+    background-color: #14a085;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    color: var(--color-texto-claro);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: var(--color-acento);
+}
+
+.footer .direccion-horarios {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas más pequeñas que 768px (móviles) */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .inicio h1 {
+        font-size: 2rem;
+    }
+
+    .inicio p {
+        font-size: 1rem;
+    }
+
+    .btn-cta {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .servicios .card-servicio {
+        padding: 1.5rem;
+    }
+
+    .servicios .card-servicio i {
+        font-size: 1.5rem;
+    }
+
+    .servicios .card-servicio h3 {
+        font-size: 1.2rem;
+    }
+
+    .servicios .card-servicio p {
+        font-size: 0.9rem;
+    }
+
+    .equipo .card-veterinario {
+        padding: 1rem;
+    }
+
+    .equipo .foto-veterinario {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contacto .telefono-grande {
+        font-size: 1.5rem;
+    }
+
+    .contacto .btn-whatsapp {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
